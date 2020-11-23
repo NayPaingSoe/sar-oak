@@ -75,7 +75,7 @@ https://templatemo.com/tm-546-sixteen-clothing
               <li class="nav-item">
               <div class="dropdown">
                <i class="fas fa-bell nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;"><span class="badge badge-pill badge-danger p-1 mb-2"> </span></i>
-              <div class="px-2 dropdown-menu dropdown-menu-right"  aria-labelledby="dropdownMenuButton" style="min-width: 610px;overflow: scroll; max-height: 90vh; padding-top: 0 !important; padding-bottom: 0 !important;">
+              <div class="px-2 dropdown-menu dropdown-menu-right"  aria-labelledby="dropdownMenuButton" style="min-width: 610px;overflow-y: scroll; max-height: 80vh; padding-top: 0 !important; padding-bottom: 0 !important;">
                 <div class="tile" style="border-bottom: 1px solid #d8d3d3;">
                     <div class="tile-inner text-black my-2 pl-3">
                         <h6>Notifications</h6>
@@ -303,11 +303,21 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="nav-link" href="addbook.html"><i class="fas fa-plus text-danger"></i> Add Book</a>
               </li>
               <li class="nav-item mt-3">
-                <a class="" href="profile.html">
-                  <div class="frame rounded-circle border-danger" style="width: 40px;height: 40px;overflow: hidden;margin-top: -10px;border-width: 12px;">
-                    <img style="width: 40px;height: 40;" src="assets/images/more-info.jpg" alt="" class="" data-holder-rendered="true">
-                    </div>
-                </a>
+                <div class="dropdown">
+                  <a class="" href="profile.html" id="dropdownMenuButton1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="frame rounded-circle border-danger" style="width: 40px;height: 40px;overflow: hidden;margin-top: -10px;border-width: 12px;">
+                      <img style="width: 40px;height: 40;" src="assets/images/more-info.jpg" alt="" class="" data-holder-rendered="true">
+                      </div>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a href="profile.html" class="dropdown-item" href="#">Profile</a>
+                    <a href="profile.html" class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </div>
+
+
+
+            
               </li>
             </ul>
           </div>
@@ -317,7 +327,25 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
+    <div class="banner header-text ">
+      <div class="mt-5">
+      <form class="form-inline my-2 my-lg-0 mt-5">
+        <input class="form-control col-md-6 col-sm-8 offset-sm-1 offset-md-3 mr-3" type="search" placeholder="Search" aria-label="Search" style="border-radius: 1rem;">
+        <button class="btn btn-danger my-2 my-sm-0" type="submit" style="border-radius: 1rem;">Search</button>
+      </form>
+      <div class="result col-md-6 col-sm-8 offset-sm-1 offset-md-3 shadow-sm" style="max-height: 300px; background-color: #e9e3e3;overflow-y: scroll;margin-top: 1px;"  >
+      <a href="detailbook.html">
+        <div class="resultdetail" style="border-bottom: 1px solid #565252;">
+          <div class="frame pt-2 mt-1 float-left" style="width: 40px;height: 60px;overflow: hidden;margin-top: -10px;border-width: 12px;">
+              <img style="width: 40px;height: 60;" src="assets/images/more-info.jpg" alt="" class="" data-holder-rendered="true">
+              </div>
+              <p class="float-left mt-3">Aung Thin</p>
+              <div class="clearfix"></div>
+            </div>
+      </a>
+    
+      </div>
+    </div>
     </div>
 
 
@@ -334,7 +362,7 @@ https://templatemo.com/tm-546-sixteen-clothing
   <p>Profile</p>
         </div>
         <div class="col-sm-2 col-2 text-center">
-          <i class="fas fa-user-alt" style="color: #666968;"></i>
+          <i class="fas fa-plus" style="color: #666968;"></i></i>
     <p>Add Book</p>
           </div>
           <div class="col-sm-2 col-2 text-center">
@@ -356,10 +384,10 @@ https://templatemo.com/tm-546-sixteen-clothing
       <div class="container">
         <div class="row pt-5">
           <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
-            </div>
+            <div class="section-heading text-center">
+    
+
+              </div>
           </div>
 
           <!-- filter -->
@@ -406,113 +434,7 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
           
           <span class="btn btn-secondary w-25 col-md-12 d-sm-block d-md-none d-lg-none d-none mb-3" style="font-size:20px;cursor:pointer" onclick="openNav()"><i class="fas fa-sort-amount-down-alt"></i> <span style="font-size: 16px;">Filter</span></span>
-          
-
-          <div class="col-md-12 d-sm-block d-md-none d-lg-none d-none mb-3">
-
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle w-25" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Filter
-              </button>
-              <div class="dropdown-menu w-25" aria-labelledby="dropdownMenuButton" style="height: 300px;overflow: scroll;">
-                <h6 class="text-danger pl-3 pb-1">Categories</h6>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <h6 class="text-danger pl-3 pb-1">Author</h6>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-               <div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div><div class="dropdownitem pl-3" style="padding: 2px;">
-                <span class="first" style="font-weight: 600;font-size: 16px;">အချစ် 
-                </span>
-                  <span class="badge badge-pill badge-danger">3</span>
-                  <br>
-               </div>
-             
-
-               <!-- author filter -->
-               
-           
-               
-                 
-
-                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-              </div>
-            </div>
-
-          </div>
+       
 
           <!-- filter close -->
 
